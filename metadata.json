@@ -1,0 +1,7 @@
+{
+  "name": "Elegant Wedding Invitation",
+  "description": "A refined, minimalist one-page wedding invitation featuring smooth animations, multilingual support, and interactive elements.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

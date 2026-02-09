@@ -1,0 +1,68 @@
+export type Language = "EN" | "ID";
+
+export interface TranslationSet {
+  hero: {
+    title: string;
+    inviteText: string;
+    date: string;
+  };
+  couple: {
+    title: string;
+    theBride: string;
+    theGroom: string;
+    brideDesc: string;
+    groomDesc: string;
+  };
+  gallery: {
+    title: string;
+    subtitle: string;
+  };
+  event: {
+    ceremony: {
+      title: string;
+      date: string;
+      time: string;
+      venue: string;
+      address: string;
+      addCalendar: string;
+      openMaps: string;
+    };
+    reception: {
+      title: string;
+      date: string;
+      time: string;
+      venue: string;
+      address: string;
+      addCalendar: string;
+      openMaps: string;
+    };
+  };
+  countdown: {
+    days: string;
+    hours: string;
+    minutes: string;
+    seconds: string;
+    toBigDay: string;
+  };
+  video: {
+    title: string;
+    url: string; // Added url in case video component needs it
+  };
+  closing: {
+    thanks: string;
+    wishes: string;
+  };
+  gift: {
+    title: string;
+    subtitle: string;
+    bniName: string;
+    bcaName: string;
+    copyText: string;
+    copiedText: string;
+  };
+}
+
+export interface SiteContent {
+  EN: TranslationSet;
+  ID: TranslationSet;
+}
