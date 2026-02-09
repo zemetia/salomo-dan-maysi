@@ -39,6 +39,7 @@ export const translations: SiteContent = {
         addCalendar: "Save the Date",
         openMaps: "View Location",
       },
+      transitText: "To the reception venue",
     },
     countdown: {
       days: "Days",
@@ -104,6 +105,7 @@ export const translations: SiteContent = {
         addCalendar: "Simpan Tanggal",
         openMaps: "Lihat Lokasi",
       },
+      transitText: "Menuju lokasi resepsi",
     },
     countdown: {
       days: "Hari",

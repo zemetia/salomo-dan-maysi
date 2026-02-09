@@ -57,11 +57,14 @@ const App: React.FC = () => {
           >
             <Countdown t={t.countdown} targetDate="2026-02-28T10:00:00" />
           </motion.section>
+        </div>
 
-          <section id="event" className="py-20 md:py-32">
-            <EventInfo t={t.event} />
-          </section>
+        {/* Event section outside max-w container so map can go full width */}
+        <section id="event" className="py-20 md:py-32 overflow-x-clip">
+          <EventInfo t={t.event} />
+        </section>
 
+        <div className="max-w-[1100px] mx-auto px-4 md:px-0">
           <div className="section-divider max-w-[300px] mx-auto opacity-10"></div>
 
           <section id="gift" className="w-full">

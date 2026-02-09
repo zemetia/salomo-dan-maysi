@@ -36,6 +36,7 @@ export interface TranslationSet {
       addCalendar: string;
       openMaps: string;
     };
+    transitText: string;
   };
   countdown: {
     days: string;
