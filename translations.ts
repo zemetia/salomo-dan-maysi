@@ -66,6 +66,20 @@ export const translations: SiteContent = {
       copyText: "Copy Account Number",
       copiedText: "Copied!",
     },
+    rsvp: {
+      title: "RSVP",
+      subtitle: "Please fill the confirmation of attendance below.",
+      namePlaceholder: "Name",
+      attendanceLabel: "Attendance",
+      attendanceOptions: {
+        coming: "Attending",
+        notComing: "Unable to Attend",
+        uncertain: "Uncertain",
+      },
+      numberOfPersonLabel: "Number of Person",
+      numberOfPersonPlaceholder: "Number of Person",
+      sendButton: "Send",
+    },
   },
   ID: {
     hero: {
@@ -131,6 +145,20 @@ export const translations: SiteContent = {
       bcaName: "Maysi Tri Hilery Situmorang",
       copyText: "Salin No. Rekening",
       copiedText: "Tersalin!",
+    },
+    rsvp: {
+      title: "RSVP",
+      subtitle: "Silakan isi konfirmasi kehadiran di bawah ini.",
+      namePlaceholder: "Nama",
+      attendanceLabel: "Kehadiran",
+      attendanceOptions: {
+        coming: "Hadir",
+        notComing: "Tidak Bisa Hadir",
+        uncertain: "Masih Ragu",
+      },
+      numberOfPersonLabel: "Jumlah Orang",
+      numberOfPersonPlaceholder: "Jumlah Orang",
+      sendButton: "Kirim",
     },
   },
 };

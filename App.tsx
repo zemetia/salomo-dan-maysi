@@ -11,6 +11,7 @@ import AudioControl from "./components/AudioControl";
 import LanguageToggle from "./components/LanguageToggle";
 import Closing from "./components/Closing";
 import Gift from "./components/Gift";
+import Rsvp from "./components/Rsvp";
 import { motion } from "framer-motion";
 
 const App: React.FC = () => {
@@ -65,6 +66,10 @@ const App: React.FC = () => {
         </section>
 
         <div className="max-w-[1100px] mx-auto px-4 md:px-0">
+          <section id="rsvp" className="w-full">
+            <Rsvp t={t.rsvp} />
+          </section>
+
           <div className="section-divider max-w-[300px] mx-auto opacity-10"></div>
 
           <section id="gift" className="w-full">

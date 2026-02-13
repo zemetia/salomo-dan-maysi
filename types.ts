@@ -61,6 +61,16 @@ export interface TranslationSet {
     copyText: string;
     copiedText: string;
   };
+  rsvp: {
+    title: string;
+    subtitle: string;
+    namePlaceholder: string;
+    attendanceLabel: string;
+    attendanceOptions: { coming: string; notComing: string; uncertain: string };
+    numberOfPersonLabel: string;
+    numberOfPersonPlaceholder: string;
+    sendButton: string;
+  };
 }
 
 export interface SiteContent {
