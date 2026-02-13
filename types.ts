@@ -61,6 +61,31 @@ export interface TranslationSet {
     copyText: string;
     copiedText: string;
   };
+  weddingWish: {
+    title: string;
+    subtitle: string;
+    nameLabel: string;
+    messageLabel: string;
+    placeholder: string;
+    submitButton: string;
+    successMessage: string;
+    emptyMessage: string;
+  };
+  rsvp: {
+    title: string;
+    subtitle: string;
+    nameLabel: string;
+    attendanceLabel: string;
+    attendanceOptions: {
+      present: string;
+      absent: string;
+    };
+    guestCountLabel: string;
+    messageLabel: string;
+    submitButton: string;
+    successMessage: string;
+    whatsappMessage: string;
+  };
 }
 
 export interface SiteContent {
