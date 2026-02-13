@@ -74,17 +74,16 @@ export interface TranslationSet {
   rsvp: {
     title: string;
     subtitle: string;
-    nameLabel: string;
+    namePlaceholder: string;
     attendanceLabel: string;
     attendanceOptions: {
-      present: string;
-      absent: string;
+      coming: string;
+      notComing: string;
+      uncertain: string;
     };
-    guestCountLabel: string;
-    messageLabel: string;
-    submitButton: string;
-    successMessage: string;
-    whatsappMessage: string;
+    numberOfPersonLabel: string;
+    numberOfPersonPlaceholder: string;
+    sendButton: string;
   };
 }
 

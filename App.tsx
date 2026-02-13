@@ -12,7 +12,7 @@ import LanguageToggle from "./components/LanguageToggle";
 import Closing from "./components/Closing";
 import Gift from "./components/Gift";
 import WeddingWish from "./components/WeddingWish";
-import RSVP from "./components/RSVP";
+import Rsvp from "./components/Rsvp";
 import { motion } from "framer-motion";
 
 const App: React.FC = () => {
@@ -67,11 +67,7 @@ const App: React.FC = () => {
         </section>
 
         {/* RSVP Section */}
-        <RSVP 
-          t={t.rsvp} 
-          coupleNames={{ groom: "Salomo", bride: "Maysi" }}
-          whatsappNumber="6282213989336"
-        />
+        <Rsvp t={t.rsvp} />
 
         {/* Wedding Wish Section */}
         <WeddingWish t={t.weddingWish} />
