@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Send, Heart, MessageCircle } from "lucide-react";
-import { collection, addDoc, query, orderBy, onSnapshot, Timestamp } from "firebase/firestore";
-import { db } from "../lib/firebase";
+import { collection, addDoc, query, orderBy, onSnapshot, Timestamp, doc } from "firebase/firestore";
+import { db, WISHES_COLLECTION } from "../lib/firebase";
 
 interface Wish {
   id: string;
@@ -32,7 +32,8 @@ const WeddingWish: React.FC<WeddingWishProps> = ({ t }) => {
   const [showSuccess, setShowSuccess] = useState(false);
 
   useEffect(() => {
-    const q = query(collection(db, "wishes"), orderBy("timestamp", "desc"));
+    const wishesRef = collection(db, WISHES_COLLECTION);
+    const q = query(wishesRef, orderBy("timestamp", "desc"));
     const unsubscribe = onSnapshot(q, (snapshot) => {
       const wishesData: Wish[] = [];
       snapshot.forEach((doc) => {
@@ -49,7 +50,8 @@ const WeddingWish: React.FC<WeddingWishProps> = ({ t }) => {
 
     setIsSubmitting(true);
     try {
-      await addDoc(collection(db, "wishes"), {
+      const wishesRef = collection(db, WISHES_COLLECTION);
+      await addDoc(wishesRef, {
         name: name.trim(),
         message: message.trim(),
         timestamp: Timestamp.now(),
