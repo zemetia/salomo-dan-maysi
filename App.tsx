@@ -17,7 +17,7 @@ import { motion } from "framer-motion";
 
 const App: React.FC = () => {
   const [lang, setLang] = useState<Language>("ID");
-  const [isMuted, setIsMuted] = useState(true);
+  const [isMuted, setIsMuted] = useState(false);
   const t = translations[lang];
 
   return (
