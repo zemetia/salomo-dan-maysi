@@ -76,6 +76,20 @@
       backdrop-filter: blur(8px);
       border: 1px solid rgba(255, 255, 255, 0.6);
     }
+
+    /* Floating animation for music indicator */
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-6px);
+      }
+    }
+
+    .animate-float {
+      animation: float 3s ease-in-out infinite;
+    }
   </style>
   <script type="importmap">
 {
